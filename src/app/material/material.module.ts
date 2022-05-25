@@ -9,7 +9,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
  import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
-
+ import {MatTreeModule} from '@angular/material/tree'; 
 @NgModule({
   exports:[
     MatSidenavModule,
@@ -21,7 +21,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatMenuModule,
     MatTableModule,
     MatProgressSpinnerModule,
-    FlexLayoutModule
+    MatTreeModule,
+    
+    FlexLayoutModule,
     
   ],
   declarations: [],

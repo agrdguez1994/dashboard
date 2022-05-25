@@ -3,12 +3,21 @@
 
 <div class="main-sidenav-content">
   <mat-sidenav-container fxFlexFill >
-    <mat-sidenav #sidenav [mode]="sidemode" [opened]="openedValue"  fxShow="true" [fxHide.xs]="fxValue">      
+    
+    
+    <mat-sidenav #sidenav [mode]="sidemode" [opened]="openedValue"  fxShow="true" [fxHide.xs]="fxValue">   
+
+      
+
         <div class="side-buttons-list" fxLayout="column" fxLayoutGap="30px">
           <button mat-button routerLink="/sales/list"> Sales</button>
+         
+         
+          
           <button mat-button routerLink="/products/list">Products</button>
           <button mat-button routerLink="/users/list">Users</button>      
         </div>
+
       </mat-sidenav>
     <mat-sidenav-content class="content">
       

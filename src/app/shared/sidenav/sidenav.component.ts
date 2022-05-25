@@ -1,5 +1,8 @@
+import { NestedTreeControl } from '@angular/cdk/tree';
 import { Component, HostListener, OnInit} from '@angular/core';
 import { MatDrawerMode } from '@angular/material/sidenav';
+import { MatTreeNestedDataSource } from '@angular/material/tree';
+
 
 
 @Component({
@@ -9,13 +12,14 @@ import { MatDrawerMode } from '@angular/material/sidenav';
 })
 export class SidenavComponent implements OnInit {
   
-
+  
   public getScreenWidth: any;
   public fxValue: boolean=true;
   public sidemode: MatDrawerMode='side';
   public openedValue:boolean=true;
 
-  constructor() { }
+  constructor() {  }
+  
   
   ngOnInit(): void { 
     this.setOpenedValue();

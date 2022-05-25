@@ -9,12 +9,14 @@ const routes: Routes = [
     children:[
       {
         path:'list',
-        component:ProductListComponent
-      },      
+        component:ProductListComponent,
+      },     
       {
         path:'**',
-        redirectTo:'404'
-      }
+        redirectTo:'/404'
+      },
+      
+      
     ]
   }
 ]
