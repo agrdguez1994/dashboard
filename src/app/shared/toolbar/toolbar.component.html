@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="fixed-header" >
+    <mat-toolbar-row>
+      <span>           
+        <button mat-button routerLink="/"><h4>Home</h4></button>
+      </span>
+      <button mat-icon-button  (click)="emit()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="fill-space"></span>
+      
+      <button class="btn-user" mat-mini-fab [matMenuTriggerFor]="menu" >
+        <img src="../../../assets/avatar.jpg" alt="" srcset="" width="100%">
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Setup</span>
+        </button>     
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>log out</span>
+        </button>
+      </mat-menu>
+      
+    </mat-toolbar-row>
+  </mat-toolbar>
